@@ -6,7 +6,9 @@ export default function ThemeToggle() {
 
   return (
     <button
-      onClick={toggleTheme}
+      onClick={() => {
+        if (typeof toggleTheme === "function") toggleTheme();
+      }}
       className="p-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors shadow-sm"
       aria-label="Toggle Theme"
     >

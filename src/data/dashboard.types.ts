@@ -27,4 +27,14 @@ export type TransactionDataset = {
   statusColor?: string;
 };
 
+export interface User {
+  id: number;
+  name: string;
+  email: string;
+  role: "Admin" | "Editor" | "User";
+  status: "Active" | "Pending" | "Inactive";
+  lastLogin: string;
+  avatar: string;
+}
+
 export type DatasetWrapper<T> = Record<string, T>;

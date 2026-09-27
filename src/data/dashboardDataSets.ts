@@ -3,6 +3,7 @@ import type {
   DatasetWrapper,
   SalesDataset,
   TransactionDataset,
+  User,
   UserDataset,
 } from "./dashboard.types";
 
@@ -176,5 +177,48 @@ export const transactionData: TransactionDataset[] = [
     customer: "บริษัท เทค จำกัด",
     status: "สำเร็จ",
     amount: 12900,
+  },
+];
+
+export const initialUsers: User[] = [
+  {
+    id: 1,
+    name: "สมชาย ใจดี",
+    email: "somchai@example.com",
+    role: "Admin",
+    status: "Active",
+    lastLogin: "วันนี้, 10:45 น.",
+    avatar:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=faces",
+  },
+  {
+    id: 2,
+    name: "วิไล รักสงบ",
+    email: "wilai@example.com",
+    role: "Editor",
+    status: "Active",
+    lastLogin: "เมื่อวาน, 16:20 น.",
+    avatar:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces",
+  },
+  {
+    id: 3,
+    name: "ประเสริฐ มั่นคง",
+    email: "prasert@example.com",
+    role: "User",
+    status: "Pending",
+    lastLogin: "ยังไม่เคยเข้าสู่ระบบ",
+    avatar:
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop&crop=faces",
+  },
+  {
+    id: 4,
+    name: "กanyarat สวยสม",
+    email: "kanyarat@example.com",
+    role: "User",
+    status: "Inactive",
+    lastLogin: "3 สัปดาห์ที่แล้ว",
+    avatar:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces",
   },
 ];
