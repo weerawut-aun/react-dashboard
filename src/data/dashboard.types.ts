@@ -37,4 +37,22 @@ export interface User {
   avatar: string;
 }
 
+export interface MonthlySales {
+  name: string;
+  sales: number;
+}
+
+export interface Category {
+  name: string;
+  value: number;
+}
+
+export interface SalesTransactions {
+  id: string;
+  customer: string;
+  category: string;
+  amount: string;
+  status: string;
+}
+
 export type DatasetWrapper<T> = Record<string, T>;

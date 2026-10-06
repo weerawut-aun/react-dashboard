@@ -1,8 +1,5 @@
 import { Filter, UserCheck, UserPlus, UserX } from "lucide-react";
-import { useState } from "react";
 import UserCard from "../components/common/UserCard";
-import { initialUsers } from "../data/dashboardDataSets";
-import type { User } from "../data/dashboard.types";
 import UserTables from "../hooks/userTables";
 import SearchTableData from "../components/common/SearchTableData";
 import Pagination from "../components/common/Pagination";

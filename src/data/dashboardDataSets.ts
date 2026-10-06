@@ -1,7 +1,10 @@
 import type {
+  Category,
   DashboardDataset,
   DatasetWrapper,
+  MonthlySales,
   SalesDataset,
+  SalesTransactions,
   TransactionDataset,
   User,
   UserDataset,
@@ -220,5 +223,59 @@ export const initialUsers: User[] = [
     lastLogin: "3 สัปดาห์ที่แล้ว",
     avatar:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces",
+  },
+];
+
+export const monthlySalesData: MonthlySales[] = [
+  { name: "ม.ค.", sales: 120000 },
+  { name: "ก.พ.", sales: 150000 },
+  { name: "มี.ค.", sales: 180000 },
+  { name: "เม.ย.", sales: 160000 },
+  { name: "พ.ค.", sales: 210000 },
+  { name: "มิ.ย.", sales: 245800 },
+];
+
+export const categoryData: Category[] = [
+  { name: "ซอฟต์แวร์", value: 45 },
+  { name: "อุปกรณ์ไอที", value: 30 },
+  { name: "บริการเสริม", value: 15 },
+  { name: "อื่นๆ", value: 10 },
+];
+
+export const salesTransactions: SalesTransactions[] = [
+  {
+    id: "#SAL-901",
+    customer: "บริษัท เอ็นเตอร์ จำกัด",
+    category: "ซอฟต์แวร์",
+    amount: "฿45,000",
+    status: "สำเร็จ",
+  },
+  {
+    id: "#SAL-902",
+    customer: "ร้านค้าปลีก ก.ดี",
+    category: "อุปกรณ์ไอที",
+    amount: "฿12,500",
+    status: "สำเร็จ",
+  },
+  {
+    id: "#SAL-903",
+    customer: "คุณสมชาย ใจดี",
+    category: "บริการเสริม",
+    amount: "฿3,900",
+    status: "รอดำเนินการ",
+  },
+  {
+    id: "#SAL-904",
+    customer: "บริษัท เทคโซลูชัน",
+    category: "ซอฟต์แวร์",
+    amount: "฿89,000",
+    status: "สำเร็จ",
+  },
+  {
+    id: "#SAL-905",
+    customer: "คุณวิภา มณีรัตน์",
+    category: "อุปกรณ์ไอที",
+    amount: "฿6,200",
+    status: "ยกเลิก",
   },
 ];
